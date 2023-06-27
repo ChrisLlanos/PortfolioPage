@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+header{
+  display: inline;
+}
+
+/*place nav links in top right corner*/
+header nav{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: blue;
+}
+
+/*change nav bar from column to row*/
+header nav ul li{
+  float: left;
+  margin-left: 25px;
+}
+
+/*create flex container for body*/
+#flexcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#Projects{
+  position: absolute;
+  left: 0;
+}
+
+figcaption{
+  text-align: center;
+}
+
+#firstCard{
+  flex: 1 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  #flexcontainer{
+    flex-direction: column;
+  }
+}
